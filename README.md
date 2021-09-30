@@ -12,4 +12,4 @@ Développement web - [Projet vous êtes le héros](https://smnarnold.com/projets
 
 ## Diagramme
 
-![](../assets/diagramme_synopsis.png)
+![](diagramme_synopsis.png)
