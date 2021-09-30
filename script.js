@@ -23,7 +23,7 @@ let chaptersObj = {
   mort_commencement_1: {  
     subtitle: "Game Over",
     text: "Tu te fais tué par le dragon.",
-    img: "qqch.jpg",
+    img: "dragon.jfif",
     option: [
       {
       text: "On recommence.",
@@ -35,7 +35,7 @@ let chaptersObj = {
   mort_commencement_2: {  
     subtitle: "Game Over",
     text: "Tu deviens hyper musclé et tu tue le dragon. En sortant du château, tu traverses le pont devant toi. Tu meurs parce que tu casses le pont avec ton poids" ,
-    img: "qqch.jpg",
+    img: "pont_casse.jpg",
     option: [
       {
       text: "On recommence.",
@@ -47,7 +47,7 @@ let chaptersObj = {
   suite_commencement: {  
     subtitle: "Le pont",
     text: "Le dragon mange le steak et tu sors du château.",
-    img: "qqch.jpg",
+    img: "dragon_mange.png",
     option: [
       {
       text: "Traverser le pont",
@@ -80,7 +80,7 @@ let chaptersObj = {
   mort_chemins_1: {  
     subtitle: "Game Over",
     text: "Tu meurs parce que tu es trop belle.",
-    img: "qqch.jpg",
+    img: "miroir.jpg",
     option: [
       {
       text: "On recommence.",
@@ -92,7 +92,7 @@ let chaptersObj = {
   mort_chemins_2: {  
     subtitle: "Game Over",
     text: "Tu meurs par les papillons kamikaze et les licornes qui tirent des lasers.",
-    img: "qqch.jpg",
+    img: "unicorn.jpeg",
     option: [
       {
       text: "On recommence.",
@@ -103,8 +103,8 @@ let chaptersObj = {
 
   suite_chemins: {  
     subtitle: "La tornade",
-    text: "Un lait à la fraise sort d'un trou volcanique. Tu le bois et tu voles. En volant, tu vois une tornade au loin. .",
-    img: "qqch.jpg",
+    text: "Un lait à la fraise sort d'un trou volcanique. Tu le bois et tu voles. En volant, tu vois une tornade au loin, tu y vois bizarrement des requins.",
+    img: "tornade.jpg",
     option: [
       {
       text: "Regarder la tornade",
@@ -136,7 +136,7 @@ let chaptersObj = {
   mort_chine: {  
     subtitle: "Game Over",
     text: "Tu détruits complètement la muraille et des millénaires d'histoire. Tu meurs écrasé.",
-    img: "qqch.jpg",
+    img: "wall.jpg",
     option: [
       {
       text: "On recommence.",
@@ -148,7 +148,7 @@ let chaptersObj = {
   suite_chine_1: {  
     subtitle: "Le pudding",
     text: "Un pudding géant aux poissons et aux algues te rattrappes. Tu sors doucement en glissant.",
-    img: "qqch.jpg",
+    img: "pudding.jpg",
     option: [
       {
       text: "Marcher",
@@ -160,7 +160,7 @@ let chaptersObj = {
   suite_chine_2: {  
     subtitle: "Le père Noël",
     text: "Il te téléporte avec sa barbe sur une autre planète",
-    img: "qqch.jpg",
+    img: "pere_noel.jpg",
     option: [
       {
       text: "Regarder autour",
@@ -192,7 +192,7 @@ let chaptersObj = {
   mort_planete: {  
     subtitle: "Game Over",
     text: "Tu te transforme en montagne.",
-    img: "qqch.jpg",
+    img: "montagne.jpg",
     option: [
       {
       text: "On recommence.",
@@ -204,7 +204,7 @@ let chaptersObj = {
   restart_planete: {  
     subtitle: "Le mauvais pont",
     text: "Le Naruto Bridge apparait devant toi.",
-    img: "qqch.jpg",
+    img: "naruto.jpg",
     option: [
       {
       text: "Traverser",
@@ -216,7 +216,7 @@ let chaptersObj = {
   suite_planete: {  
     subtitle: "Ocarina",
     text: "De la musique de Zelda commence à jouer",
-    img: "qqch.jpg",
+    img: "navi.png",
     option: [
       {
       text: "Écouter",
@@ -244,7 +244,7 @@ let chaptersObj = {
   mort_coffre: {  
     subtitle: "Game Over",
     text: "Tu es forcé à te battre avec Vegeta pour le reste des temps",
-    img: "qqch.jpg",
+    img: "vegeta.jpg",
     option: [
       {
       text: "On recommence.",
@@ -256,7 +256,7 @@ let chaptersObj = {
   suite_coffre: {  
     subtitle: "One Piece!",
     text: "Le Going Merry sort du coffre.",
-    img: "qqch.jpg",
+    img: "going_merry.png",
     option: [
       {
       text: "Monter",
@@ -284,7 +284,7 @@ let chaptersObj = {
   mort_attendu: {  
     subtitle: "Game Over",
     text: "Pumba arrive avec la musique de THX et vous tuent tout les deux avec sa flatulence",
-    img: "qqch.jpg",
+    img: "pumba.png",
     option: [
       {
       text: "On recommence.",
@@ -296,7 +296,7 @@ let chaptersObj = {
   fin_attendu: {  
     subtitle: "The End",
     text: "Tu prends toute sa richesse et vit heureuse pour la fin des temps.",
-    img: "qqch.jpg",
+    img: "richesse.jpg",
     option: [
       {
       text: "Reccomencer?",
@@ -324,7 +324,7 @@ let chaptersObj = {
   mort_pouvoir_mauvais: {  
     subtitle: "Game Over",
     text: "LeBron James arrive et fait un panier avec le gant mais celui-ci tombe sur toi et tu meurs.",
-    img: "qqch.jpg",
+    img: "lebron.jpg",
     option: [
       {
       text: "On recommence.",
@@ -336,7 +336,7 @@ let chaptersObj = {
   suite_pouvoir_mauvais: {  
     subtitle: "Game Over",
     text: "Tu te téléportes sur une autre planète.",
-    img: "qqch.jpg",
+    img: "planete.jpg",
     option: [
       {
       text: "On recommence.",
@@ -369,7 +369,7 @@ let chaptersObj = {
   mort_planete_mauvais: {  
     subtitle: "Game Over",
     text: "Tu te transforme en montagne.",
-    img: "qqch.jpg",
+    img: "montagne.jpg",
     option: [
       {
       text: "On recommence.",
@@ -381,7 +381,7 @@ let chaptersObj = {
   restart_planete_mauvais: {  
     subtitle: "Le mauvais pont",
     text: "Le Naruto Bridge apparait devant toi.",
-    img: "qqch.jpg",
+    img: "naruto.jpg",
     option: [
       {
       text: "Traverser",
@@ -393,7 +393,7 @@ let chaptersObj = {
   suite_planete_mauvais: {  
     subtitle: "Ocarina",
     text: "De la musique de Zelda commence à jouer",
-    img: "qqch.jpg",
+    img: "navi.png",
     option: [
       {
       text: "Écouter",
@@ -421,7 +421,7 @@ let chaptersObj = {
   mort_coffre_mauvais_1: {  
     subtitle: "Game Over",
     text: "Plante Piranha sort du coffre et te manges.",
-    img: "qqch.jpg",
+    img: "piramha.jpg",
     option: [
       {
       text: "On recommence.",
@@ -433,7 +433,7 @@ let chaptersObj = {
   mort_coffre_mauvais_2: {  
     subtitle: "Game Over",
     text: "Tu es forcé à manger de la lasagne avec Garfield pour le reste de tes temps",
-    img: "qqch.jpg",
+    img: "garfield.jfif",
     option: [
       {
       text: "On recommence.",
