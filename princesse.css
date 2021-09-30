@@ -1,0 +1,81 @@
+@font-face {
+  src: url("assets/fontes/vallenia love.otf") format("opentype");
+  font-family: "Princesse";
+}
+
+@font-face {
+  src: url("assets/fontes/ComicNeueSansID.ttf") format("truetype");
+  font-family: "ComicSans";
+}
+
+body {
+  background-color: #a1fcdf;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.game {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 800px;
+  height: 800px;
+  background-color: #ffd639;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+  align-self: center;
+}
+
+h1 {
+  font-family: "Princesse";
+  align-self: center;
+  color: #ff4365;
+  font-size: 45px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "ComicSans";
+  align-self: center;
+  color: #ff4365;
+  font-size: 30px;
+}
+
+p {
+  font-family: "ComicSans";
+  align-self: center;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #ff4365;
+  font-size: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+button {
+  font-family: "ComicSans";
+  width: 100px;
+  background-color: #7b4b94;
+  border-color: #ff4365;
+  color: #ff4365;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #efc3e6;
+}
