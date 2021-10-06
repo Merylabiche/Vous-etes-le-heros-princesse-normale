@@ -3,7 +3,7 @@ let chaptersObj = {
   le_commencement: {  
     subtitle: "Le commencement",
     text: "Tu es une princesse et tu te réveille d'un cauchemar sans personne à côté de toi. Le prince s'est enfui et tu veux le retrouver.",
-    img: "tiana_dort.jpg",
+    img: "assets/img/tiana_dort.jpg",
     option: [
       {
       text: "Tu sors de ton château.",
@@ -23,7 +23,7 @@ let chaptersObj = {
   mort_commencement_1: {  
     subtitle: "Game Over",
     text: "Tu te fais tué par le dragon.",
-    img: "dragon.jfif",
+    img: "assets/img/dragon.jfif",
     option: [
       {
       text: "On recommence.",
@@ -35,7 +35,7 @@ let chaptersObj = {
   mort_commencement_2: {  
     subtitle: "Game Over",
     text: "Tu deviens hyper musclé et tu tue le dragon. En sortant du château, tu traverses le pont devant toi. Tu meurs parce que tu casses le pont avec ton poids" ,
-    img: "pont_casse.jpg",
+    img: "assets/img/pont_casse.jpg",
     option: [
       {
       text: "On recommence.",
@@ -47,7 +47,7 @@ let chaptersObj = {
   suite_commencement: {  
     subtitle: "Le pont",
     text: "Le dragon mange le steak et tu sors du château.",
-    img: "dragon_mange.png",
+    img: "assets/img/dragon_mange.png",
     option: [
       {
       text: "Traverser le pont",
@@ -60,7 +60,7 @@ let chaptersObj = {
   les_chemins: {
     subtitle: "Les chemins",
     text: "Tu vois 3 chemins devant toi.",
-    img: "chemins.jpg",
+    img: "assets/img/chemins.jpg",
     option: [
       {
       text: "Chemin avec des miroirs.",
@@ -80,7 +80,7 @@ let chaptersObj = {
   mort_chemins_1: {  
     subtitle: "Game Over",
     text: "Tu meurs parce que tu es trop belle.",
-    img: "miroir.jpg",
+    img: "assets/img/miroir.jpg",
     option: [
       {
       text: "On recommence.",
@@ -92,7 +92,7 @@ let chaptersObj = {
   mort_chemins_2: {  
     subtitle: "Game Over",
     text: "Tu meurs par les papillons kamikaze et les licornes qui tirent des lasers.",
-    img: "unicorn.jpeg",
+    img: "assets/img/unicorn.jpeg",
     option: [
       {
       text: "On recommence.",
@@ -104,7 +104,7 @@ let chaptersObj = {
   suite_chemins: {  
     subtitle: "La tornade",
     text: "Un lait à la fraise sort d'un trou volcanique. Tu le bois et tu voles. En volant, tu vois une tornade au loin, tu y vois bizarrement des requins.",
-    img: "tornade.jpg",
+    img: "assets/img/tornade.jpg",
     option: [
       {
       text: "Regarder la tornade",
@@ -116,7 +116,7 @@ let chaptersObj = {
   la_chine: {
   subtitle: "La Chine",
   text: "Un requin qui vient de sortir de la tornade fonce sur toi et te fait tomber. Tu atterris sur la muraille de chine.",
-  img: "chine.jpg",
+  img: "assets/img/chine.jpg",
   option: [
     {
     text: "Tu prends une roche à terre.",
@@ -136,7 +136,7 @@ let chaptersObj = {
   mort_chine: {  
     subtitle: "Game Over",
     text: "Tu détruits complètement la muraille et des millénaires d'histoire. Tu meurs écrasé.",
-    img: "wall.jpg",
+    img: "assets/img/wall.jpg",
     option: [
       {
       text: "On recommence.",
@@ -148,7 +148,7 @@ let chaptersObj = {
   suite_chine_1: {  
     subtitle: "Le pudding",
     text: "Un pudding géant aux poissons et aux algues te rattrappes. Tu sors doucement en glissant.",
-    img: "pudding.jpg",
+    img: "assets/img/pudding.jpg",
     option: [
       {
       text: "Marcher",
@@ -160,7 +160,7 @@ let chaptersObj = {
   suite_chine_2: {  
     subtitle: "Le père Noël",
     text: "Il te téléporte avec sa barbe sur une autre planète",
-    img: "pere_noel.jpg",
+    img: "assets/img/pere_noel.jpg",
     option: [
       {
       text: "Regarder autour",
@@ -172,7 +172,7 @@ let chaptersObj = {
   autre_planete: {
     subtitle: "Autre planète",
     text: " Un Alien vient te voir.",
-    img: "alien.jpg",
+    img: "assets/img/alien.jpg",
     option: [
       {
       text: "90E3HDGBVC",
@@ -192,7 +192,7 @@ let chaptersObj = {
   mort_planete: {  
     subtitle: "Game Over",
     text: "Tu te transforme en montagne.",
-    img: "montagne.jpg",
+    img: "assets/img/montagne.jpg",
     option: [
       {
       text: "On recommence.",
@@ -204,7 +204,7 @@ let chaptersObj = {
   restart_planete: {  
     subtitle: "Le mauvais pont",
     text: "Le Naruto Bridge apparait devant toi.",
-    img: "naruto.jpg",
+    img: "assets/img/naruto.jpg",
     option: [
       {
       text: "Traverser",
@@ -216,7 +216,7 @@ let chaptersObj = {
   suite_planete: {  
     subtitle: "Ocarina",
     text: "De la musique de Zelda commence à jouer",
-    img: "navi.png",
+    img: "assets/img/navi.png",
     option: [
       {
       text: "Écouter",
@@ -228,7 +228,7 @@ let chaptersObj = {
   dilemme_coffre: {
     subtitle: "Dilemme du coffre",
     text: "Un coffre apparait et te demande: As-tu aidé le père Noël?",
-    img: "coffre.jpg",
+    img: "assets/img/coffre.jpg",
     option: [
       {
       text: "Mentir et dire non.",
@@ -244,7 +244,7 @@ let chaptersObj = {
   mort_coffre: {  
     subtitle: "Game Over",
     text: "Tu es forcé à te battre avec Vegeta pour le reste des temps",
-    img: "vegeta.jpg",
+    img: "assets/img/vegeta.jpg",
     option: [
       {
       text: "On recommence.",
@@ -256,7 +256,7 @@ let chaptersObj = {
   suite_coffre: {  
     subtitle: "One Piece!",
     text: "Le Going Merry sort du coffre.",
-    img: "going_merry.png",
+    img: "assets/img/going_merry.png",
     option: [
       {
       text: "Monter",
@@ -268,7 +268,7 @@ let chaptersObj = {
   moment_attendu: {
     subtitle: "Le moment tant attendu",
     text: "Tu arrives devant ton prince.",
-    img: "prince.jpg",
+    img: "assets/img/prince.jpg",
     option: [
       {
       text: "Tu le laisse vivre.",
@@ -284,7 +284,7 @@ let chaptersObj = {
   mort_attendu: {  
     subtitle: "Game Over",
     text: "Pumba arrive avec la musique de THX et vous tuent tout les deux avec sa flatulence",
-    img: "pumba.png",
+    img: "assets/img/pumba.png",
     option: [
       {
       text: "On recommence.",
@@ -296,7 +296,7 @@ let chaptersObj = {
   fin_attendu: {  
     subtitle: "The End",
     text: "Tu prends toute sa richesse et vit heureuse pour la fin des temps.",
-    img: "richesse.jpg",
+    img: "assets/img/richesse.jpg",
     option: [
       {
       text: "Reccomencer?",
@@ -308,7 +308,7 @@ let chaptersObj = {
   pouvoir_ultime_mauvais: {
     subtitle: "Pouvoir ultime",
     text: "Elle trouve le gant de Thanos avec toutes les pierres.",
-    img: "thanos.jpg",
+    img: "assets/img/thanos.jpg",
     option: [
       {
       text: "Tu ne claques des doigts avec le gant.",
@@ -324,7 +324,7 @@ let chaptersObj = {
   mort_pouvoir_mauvais: {  
     subtitle: "Game Over",
     text: "LeBron James arrive et fait un panier avec le gant mais celui-ci tombe sur toi et tu meurs.",
-    img: "lebron.jpg",
+    img: "assets/img/lebron.jpg",
     option: [
       {
       text: "On recommence.",
@@ -336,7 +336,7 @@ let chaptersObj = {
   suite_pouvoir_mauvais: {  
     subtitle: "Game Over",
     text: "Tu te téléportes sur une autre planète.",
-    img: "planete.jpg",
+    img: "assets/img/planete.jpg",
     option: [
       {
       text: "On recommence.",
@@ -349,7 +349,7 @@ let chaptersObj = {
   autre_planete_mauvais: {
     subtitle: "Autre planète",
     text: "Un Alien vient te voir.",
-    img: "alien.jpg",
+    img: "assets/img/alien.jpg",
     option: [
       {
       text: "90E3HDGBVC",
@@ -369,7 +369,7 @@ let chaptersObj = {
   mort_planete_mauvais: {  
     subtitle: "Game Over",
     text: "Tu te transforme en montagne.",
-    img: "montagne.jpg",
+    img: "assets/img/montagne.jpg",
     option: [
       {
       text: "On recommence.",
@@ -381,7 +381,7 @@ let chaptersObj = {
   restart_planete_mauvais: {  
     subtitle: "Le mauvais pont",
     text: "Le Naruto Bridge apparait devant toi.",
-    img: "naruto.jpg",
+    img: "assets/img/naruto.jpg",
     option: [
       {
       text: "Traverser",
@@ -393,7 +393,7 @@ let chaptersObj = {
   suite_planete_mauvais: {  
     subtitle: "Ocarina",
     text: "De la musique de Zelda commence à jouer",
-    img: "navi.png",
+    img: "assets/img/navi.png",
     option: [
       {
       text: "Écouter",
@@ -405,7 +405,7 @@ let chaptersObj = {
   dilemme_coffre_mauvais:{
     subtitle: "Dilemme du coffre",
     text: "Un coffre apparait et te demande: As-tu aidé le père Noël?",
-    img: "coffre.jpg",
+    img: "assets/img/coffre.jpg",
     option: [
       {
       text: "Mentir et dire oui.",
@@ -421,7 +421,7 @@ let chaptersObj = {
   mort_coffre_mauvais_1: {  
     subtitle: "Game Over",
     text: "Plante Piranha sort du coffre et te manges.",
-    img: "piramha.jpg",
+    img: "assets/img/piranha.jpg",
     option: [
       {
       text: "On recommence.",
@@ -433,7 +433,7 @@ let chaptersObj = {
   mort_coffre_mauvais_2: {  
     subtitle: "Game Over",
     text: "Tu es forcé à manger de la lasagne avec Garfield pour le reste de tes temps",
-    img: "garfield.jfif",
+    img: "assets/img/garfield.jfif",
     option: [
       {
       text: "On recommence.",
@@ -445,7 +445,24 @@ let chaptersObj = {
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
-  console.log(chapitre.subtitle);
-  console.log(chapitre.text);
-  console.log(chapitre.img);
+  document.querySelector('h3').innerHTML =  chapitre.subtitle;
+  document.querySelector('p').innerHTML = chapitre.text;
+  document.querySelector('img').src = chapitre.img;
+  let bouton1 = document.querySelector('.button1');
+  let bouton2 = document.querySelector('.button2');
+  let bouton3 = document.querySelector('.button3');
+  for (let i = 0; i <= 32; i++) {
+    bouton1.innerHTML = chapitre.option['0'].text;
+    bouton1.onclick = function(){ 
+      chapitre.option['0'].action; 
+    }
+    bouton2.innerHTML = chapitre.option['1'].text;
+    bouton2.onclick = function(){ 
+      chapitre.option['1'].action; 
+    }
+    bouton3.innerHTML = chapitre.option['2'].text;
+    bouton3.onclick = function(){ 
+      chapitre.option['2'].action; 
+    }
+  }
 }

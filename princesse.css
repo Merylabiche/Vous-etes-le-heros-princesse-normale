@@ -30,7 +30,7 @@ body {
 
 img {
   height: 400px;
-  width: 400px;
+  width: 600px;
   align-self: center;
 }
 
@@ -69,11 +69,12 @@ p {
 
 button {
   font-family: "ComicSans";
-  width: 100px;
+  width: 200px;
   background-color: #7b4b94;
   border-color: #ff4365;
   color: #ff4365;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 button:hover {
