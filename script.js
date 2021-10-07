@@ -1,4 +1,3 @@
-
 let chaptersObj = {
   le_commencement: {  
     subtitle: "Le commencement",
@@ -7,15 +6,15 @@ let chaptersObj = {
     option: [
       {
       text: "Tu sors de ton château.",
-      action: "goToChapter(mort_commencement_1)"
+      action: "goToChapter('mort_commencement_1')"
       },
       {
       text: "Tu manges la pomme sur le comptoir.",
-      action: "goToChapter(mort_commencement_2)" 
+      action: "goToChapter('mort_commencement_2')" 
       },
       { 
       text: "Tu lances le steak que ta pas fini par la fenêtre.",
-      action: "goToChapter(suite_commencement)"
+      action: "goToChapter('suite_commencement')"
       },
     ],
   },
@@ -27,7 +26,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -39,7 +38,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -51,7 +50,7 @@ let chaptersObj = {
     option: [
       {
       text: "Traverser le pont",
-      action: "goToChapter(les_chemins)"
+      action: "goToChapter('les_chemins')"
       }
     ],
   },
@@ -64,15 +63,15 @@ let chaptersObj = {
     option: [
       {
       text: "Chemin avec des miroirs.",
-      action: "goToChapter(mort_chemins_1)" 
+      action: "goToChapter('mort_chemins_1')" 
       },
        {
       text: "Chemin avec des papillons et des licornes.",
-      action: "goToChapter(mort_chemins_2)"
+      action: "goToChapter('mort_chemins_2')"
       },
       {
       text: "Chemin volcanique avec tremblement de terre.",
-      action: "goToChapter(suite_chemins)"
+      action: "goToChapter('suite_chemins')"
       },
     ],
   },
@@ -84,7 +83,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -96,7 +95,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -108,7 +107,7 @@ let chaptersObj = {
     option: [
       {
       text: "Regarder la tornade",
-      action: "goToChapter(la_chine)"
+      action: "goToChapter('la_chine')"
       }
     ],
   },
@@ -120,15 +119,15 @@ let chaptersObj = {
   option: [
     {
     text: "Tu prends une roche à terre.",
-    action: "goToChapter(mort_chine)" 
+    action: "goToChapter('mort_chine')" 
     },
     {
     text: "Tu sautes en bas de la muraille.",
-    action: "goToChapter(suite_chine_1)"
+    action: "goToChapter('suite_chine_1')"
     },
     {
     text: "Tu aides le père Noël à retrouver son chemin.",
-    action: "goToChapter(suite_chine_2)"
+    action: "goToChapter('suite_chine_2')"
     },
   ],
 },
@@ -140,7 +139,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -152,7 +151,7 @@ let chaptersObj = {
     option: [
       {
       text: "Marcher",
-      action: "goToChapter(pouvoir_ultime_mauvais)"
+      action: "goToChapter('pouvoir_ultime_mauvais')"
       }
     ],
   },
@@ -164,7 +163,7 @@ let chaptersObj = {
     option: [
       {
       text: "Regarder autour",
-      action: "goToChapter(autre_planete)"
+      action: "goToChapter('autre_planete')"
       }
     ],
   },
@@ -176,15 +175,15 @@ let chaptersObj = {
     option: [
       {
       text: "90E3HDGBVC",
-      action: "goToChapter(mort_planete)" 
+      action: "goToChapter('mort_planete')" 
       },
       {
       text: "PKÈFQJRBGEQ",
-      action: "goToChapter(restart_planete)"
+      action: "goToChapter('restart_planete')"
       },
       {
       text: "JO3RFRGGEUFVOW",
-      action: "goToChapter(suite_planete)"
+      action: "goToChapter('suite_planete')"
       },
     ],
   },
@@ -196,7 +195,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -208,7 +207,7 @@ let chaptersObj = {
     option: [
       {
       text: "Traverser",
-      action: "goToChapter(les_chemins)"
+      action: "goToChapter('les_chemins')"
       }
     ],
   },
@@ -220,7 +219,7 @@ let chaptersObj = {
     option: [
       {
       text: "Écouter",
-      action: "goToChapter(dilemme_coffre)"
+      action: "goToChapter('dilemme_coffre')"
       }
     ],
   },
@@ -232,11 +231,11 @@ let chaptersObj = {
     option: [
       {
       text: "Mentir et dire non.",
-      action: "goToChapter(mort_coffre)" 
+      action: "goToChapter('mort_coffre')" 
       },
       {
       text: "Oui.",
-      action: "goToChapter(suite_coffre)"
+      action: "goToChapter('suite_coffre')"
       },
     ],
   },
@@ -248,7 +247,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -260,7 +259,7 @@ let chaptersObj = {
     option: [
       {
       text: "Monter",
-      action: "goToChapter(moment_attendu)"
+      action: "goToChapter('moment_attendu')"
       }
     ],
   },
@@ -272,11 +271,11 @@ let chaptersObj = {
     option: [
       {
       text: "Tu le laisse vivre.",
-      action: "goToChapter(mort_attendu)"
+      action: "goToChapter('mort_attendu')"
       },
       {
       text: "Tu le tues.",
-      action: "goToChapter(fin_attendu)" 
+      action: "goToChapter('fin_attendu')" 
       },
     ],
   },
@@ -288,7 +287,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -300,7 +299,7 @@ let chaptersObj = {
     option: [
       {
       text: "Reccomencer?",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -312,11 +311,11 @@ let chaptersObj = {
     option: [
       {
       text: "Tu ne claques des doigts avec le gant.",
-      action: "goToChapter(mort_pouvoir_mauvais)"
+      action: "goToChapter('mort_pouvoir_mauvais')"
       },
       {
       text: "Tu claques des doigts avec le gant.",
-      action: "goToChapter(suite_pouvoir_mauvais)"
+      action: "goToChapter('suite_pouvoir_mauvais')"
       },
     ],
   },
@@ -328,7 +327,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -340,7 +339,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(autre_planete_mauvais)"
+      action: "goToChapter('autre_planete_mauvais')"
       }
     ],
   },
@@ -353,15 +352,15 @@ let chaptersObj = {
     option: [
       {
       text: "90E3HDGBVC",
-      action: "goToChapter(mort_planete_mauvais)" 
+      action: "goToChapter('mort_planete_mauvais')" 
       },
       {
       text: "PKÈFQJRBGEQ",
-      action: "goToChapter(restart_planete_mauvais)"
+      action: "goToChapter('restart_planete_mauvais')"
       },
       {
       text: "JO3RFRGGEUFVOW",
-      action: "goToChapter(suite_planete_mauvais)"
+      action: "goToChapter('suite_planete_mauvais')"
       },
     ],
   },
@@ -373,7 +372,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -385,7 +384,7 @@ let chaptersObj = {
     option: [
       {
       text: "Traverser",
-      action: "goToChapter(les_chemins)"
+      action: "goToChapter('les_chemins')"
       }
     ],
   },
@@ -397,7 +396,7 @@ let chaptersObj = {
     option: [
       {
       text: "Écouter",
-      action: "goToChapter(dilemme_coffre_mauvais)"
+      action: "goToChapter('dilemme_coffre_mauvais')"
       }
     ],
   },
@@ -409,11 +408,11 @@ let chaptersObj = {
     option: [
       {
       text: "Mentir et dire oui.",
-      action: "goToChapter(mort_coffre_mauvais_2)"
+      action: "goToChapter('mort_coffre_mauvais_2')"
       },
       {
       text: "Oui.",
-      action: "goToChapter(mort_coffre_mauvais_1)" 
+      action: "goToChapter('mort_coffre_mauvais_1')" 
       },
     ],
   },
@@ -425,7 +424,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -437,7 +436,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter(le_commencement)"
+      action: "goToChapter('le_commencement')"
       }
     ],
   },
@@ -448,21 +447,45 @@ function goToChapter(chapterName) {
   document.querySelector('h3').innerHTML =  chapitre.subtitle;
   document.querySelector('p').innerHTML = chapitre.text;
   document.querySelector('img').src = chapitre.img;
+  
   let bouton1 = document.querySelector('.button1');
   let bouton2 = document.querySelector('.button2');
   let bouton3 = document.querySelector('.button3');
-  for (let i = 0; i <= 32; i++) {
-    bouton1.innerHTML = chapitre.option['0'].text;
-    bouton1.onclick = function(){ 
-      chapitre.option['0'].action; 
+  let tabBtn = [bouton1, bouton2, bouton3]
+
+  // ici, j'enlève les boutons pas nécessaires quand l'option n'existe pas
+  for (let i = 0; i < 3; i++) {
+    tabBtn[i].innerHTML = chapitre.option[i].text;
+    tabBtn[i].onclick = function(){ 
+      chapitre.option[i].action;
     }
-    bouton2.innerHTML = chapitre.option['1'].text;
-    bouton2.onclick = function(){ 
-      chapitre.option['1'].action; 
+
+    if (chapitre.option.length <= 1){
+      bouton1.classList.add("cacher")
+      bouton3.classList.add("cacher")
+      bouton2.classList.remove("cacher");
+      bouton2.innerHTML = chapitre.option[0].text;
+      bouton2.onclick = function(){ 
+        chapitre.option[0].action;
+      }
+    } 
+    else if(chapitre.option.length <= 2){
+      bouton2.classList.add("cacher")
+      bouton1.classList.remove("cacher");
+      bouton3.classList.remove("cacher");
+      bouton1.innerHTML = chapitre.option[0].text;
+      bouton3.innerHTML = chapitre.option[1].text;
+      bouton1.onclick = function(){ 
+        chapitre.option[0].action;
+      }
+      bouton2.onclick = function(){ 
+        chapitre.option[1].action;
+      }
     }
-    bouton3.innerHTML = chapitre.option['2'].text;
-    bouton3.onclick = function(){ 
-      chapitre.option['2'].action; 
+    else {
+      bouton1.classList.remove("cacher");
+      bouton2.classList.remove("cacher");
+      bouton3.classList.remove("cacher");
     }
   }
 }
