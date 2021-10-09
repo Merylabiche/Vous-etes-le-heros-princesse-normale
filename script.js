@@ -127,7 +127,7 @@ let chaptersObj = {
     },
     {
     text: "Tu aides le père Noël à retrouver son chemin.",
-    action: "goToChapter('suite_chine_2')"
+    action: "aide()"
     },
   ],
 },
@@ -338,109 +338,12 @@ let chaptersObj = {
     img: "assets/img/planete.jpg",
     option: [
       {
-      text: "On recommence.",
-      action: "goToChapter('autre_planete_mauvais')"
+      text: "Regarder autour",
+      action: "goToChapter('autre_planete')"
       }
     ],
-  },
-
-
-  autre_planete_mauvais: {
-    subtitle: "Autre planète",
-    text: "Un Alien vient te voir.",
-    img: "assets/img/alien.jpg",
-    option: [
-      {
-      text: "90E3HDGBVC",
-      action: "goToChapter('mort_planete_mauvais')" 
-      },
-      {
-      text: "PKÈFQJRBGEQ",
-      action: "goToChapter('restart_planete_mauvais')"
-      },
-      {
-      text: "JO3RFRGGEUFVOW",
-      action: "goToChapter('suite_planete_mauvais')"
-      },
-    ],
-  },
-
-  mort_planete_mauvais: {  
-    subtitle: "Game Over",
-    text: "Tu te transforme en montagne.",
-    img: "assets/img/montagne.jpg",
-    option: [
-      {
-      text: "On recommence.",
-      action: "goToChapter('le_commencement')"
-      }
-    ],
-  },
-
-  restart_planete_mauvais: {  
-    subtitle: "Le mauvais pont",
-    text: "Le Naruto Bridge apparait devant toi.",
-    img: "assets/img/naruto.jpg",
-    option: [
-      {
-      text: "Traverser",
-      action: "goToChapter('les_chemins')"
-      }
-    ],
-  },
-
-  suite_planete_mauvais: {  
-    subtitle: "Ocarina",
-    text: "De la musique de Zelda commence à jouer",
-    img: "assets/img/navi.png",
-    option: [
-      {
-      text: "Écouter",
-      action: "goToChapter('dilemme_coffre_mauvais')"
-      }
-    ],
-  },
-
-  dilemme_coffre_mauvais:{
-    subtitle: "Dilemme du coffre",
-    text: "Un coffre apparait et te demande: As-tu aidé le père Noël?",
-    img: "assets/img/coffre.jpg",
-    option: [
-      {
-      text: "Mentir et dire oui.",
-      action: "goToChapter('mort_coffre_mauvais_2')"
-      },
-      {
-      text: "Oui.",
-      action: "goToChapter('mort_coffre_mauvais_1')" 
-      },
-    ],
-  },
-
-  mort_coffre_mauvais_1: {  
-    subtitle: "Game Over",
-    text: "Plante Piranha sort du coffre et te manges.",
-    img: "assets/img/piranha.jpg",
-    option: [
-      {
-      text: "On recommence.",
-      action: "goToChapter('le_commencement')"
-      }
-    ],
-  },
-
-  mort_coffre_mauvais_2: {  
-    subtitle: "Game Over",
-    text: "Tu es forcé à manger de la lasagne avec Garfield pour le reste de tes temps",
-    img: "assets/img/garfield.jfif",
-    option: [
-      {
-      text: "On recommence.",
-      action: "goToChapter('le_commencement')"
-      }
-    ],
-  },
-};
+  } 
+}
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
@@ -448,44 +351,57 @@ function goToChapter(chapterName) {
   document.querySelector('p').innerHTML = chapitre.text;
   document.querySelector('img').src = chapitre.img;
   
-  let bouton1 = document.querySelector('.button1');
-  let bouton2 = document.querySelector('.button2');
-  let bouton3 = document.querySelector('.button3');
-  let tabBtn = [bouton1, bouton2, bouton3]
-
-  // ici, j'enlève les boutons pas nécessaires quand l'option n'existe pas
-  for (let i = 0; i < 3; i++) {
-    tabBtn[i].innerHTML = chapitre.option[i].text;
-    tabBtn[i].onclick = function(){ 
+  let bouton = document.querySelectorAll('.button');
+ 
+  for (let i = 0; i <= chapitre.option.length; i++) {
+    bouton[i].innerHTML = chapitre.option[i].text;
+    bouton[i].onclick = function(){ 
       chapitre.option[i].action;
+      console.log('bonjour');
     }
+  }
 
-    if (chapitre.option.length <= 1){
-      bouton1.classList.add("cacher")
-      bouton3.classList.add("cacher")
-      bouton2.classList.remove("cacher");
-      bouton2.innerHTML = chapitre.option[0].text;
-      bouton2.onclick = function(){ 
+ if (chapitre.option.length <= 1){
+      bouton[0].classList.add("cacher")
+      bouton[2].classList.add("cacher")
+      bouton[1].classList.remove("cacher");
+      bouton[1].innerHTML = chapitre.option[0].text;
+      bouton[1].onclick = function(){ 
         chapitre.option[0].action;
       }
     } 
     else if(chapitre.option.length <= 2){
-      bouton2.classList.add("cacher")
-      bouton1.classList.remove("cacher");
-      bouton3.classList.remove("cacher");
-      bouton1.innerHTML = chapitre.option[0].text;
-      bouton3.innerHTML = chapitre.option[1].text;
-      bouton1.onclick = function(){ 
+      bouton[1].classList.add("cacher")
+      bouton[0].classList.remove("cacher");
+      bouton[2].classList.remove("cacher");
+      bouton[0].innerHTML = chapitre.option[0].text;
+      bouton[2].innerHTML = chapitre.option[1].text;
+      bouton[0].onclick = function(){ 
         chapitre.option[0].action;
       }
-      bouton2.onclick = function(){ 
+      bouton[1].onclick = function(){ 
         chapitre.option[1].action;
       }
     }
     else {
-      bouton1.classList.remove("cacher");
-      bouton2.classList.remove("cacher");
-      bouton3.classList.remove("cacher");
+      bouton[0].classList.remove("cacher");
+      bouton[1].classList.remove("cacher");
+      bouton[2].classList.remove("cacher");
     }
-  }
+}
+
+let pereNoel = false;
+
+function aide(){
+  pereNoel = true;
+  goToChapter('suite_chine_2')
+}
+
+function impact(){
+ if(pereNoel = false){
+   goToChapter()
+ }
+ else{
+   goToChapter()
+ }
 }
