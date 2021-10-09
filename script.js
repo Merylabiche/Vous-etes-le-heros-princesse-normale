@@ -351,57 +351,24 @@ function goToChapter(chapterName) {
   document.querySelector('p').innerHTML = chapitre.text;
   document.querySelector('img').src = chapitre.img;
   
-  let bouton = document.querySelectorAll('.button');
- 
+  let bouton = '';
   for (let i = 0; i <= chapitre.option.length; i++) {
-    bouton[i].innerHTML = chapitre.option[i].text;
-    bouton[i].onclick = function(){ 
-      chapitre.option[i].action;
-      console.log('bonjour');
-    }
+    bouton += `<button onclick="${chapitre.option[i].action}">${chapitre.option[i].text}</button>`;
   }
+  document.querySelector('.options').innerHTML = bouton;
 
- if (chapitre.option.length <= 1){
-      bouton[0].classList.add("cacher")
-      bouton[2].classList.add("cacher")
-      bouton[1].classList.remove("cacher");
-      bouton[1].innerHTML = chapitre.option[0].text;
-      bouton[1].onclick = function(){ 
-        chapitre.option[0].action;
-      }
-    } 
-    else if(chapitre.option.length <= 2){
-      bouton[1].classList.add("cacher")
-      bouton[0].classList.remove("cacher");
-      bouton[2].classList.remove("cacher");
-      bouton[0].innerHTML = chapitre.option[0].text;
-      bouton[2].innerHTML = chapitre.option[1].text;
-      bouton[0].onclick = function(){ 
-        chapitre.option[0].action;
-      }
-      bouton[1].onclick = function(){ 
-        chapitre.option[1].action;
-      }
-    }
-    else {
-      bouton[0].classList.remove("cacher");
-      bouton[1].classList.remove("cacher");
-      bouton[2].classList.remove("cacher");
-    }
-}
+// let pereNoel = false;
 
-let pereNoel = false;
+// function aide(){
+//   pereNoel = true;
+//   goToChapter('suite_chine_2')
+// }
 
-function aide(){
-  pereNoel = true;
-  goToChapter('suite_chine_2')
-}
-
-function impact(){
- if(pereNoel = false){
-   goToChapter()
- }
- else{
-   goToChapter()
- }
+// function impact(){
+//  if(pereNoel = false){
+//    goToChapter()
+//  }
+//  else{
+//    goToChapter()
+//  }
 }
