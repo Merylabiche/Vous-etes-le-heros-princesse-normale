@@ -26,7 +26,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -38,7 +38,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -62,16 +62,16 @@ let chaptersObj = {
     img: "assets/img/chemins.jpg",
     option: [
       {
-      text: "Chemin avec des miroirs.",
-      action: "goToChapter('mort_chemins_1')" 
+      text: "Chemin volcanique avec tremblement de terre.",
+      action: "goToChapter('suite_chemins')"
       },
-       {
+      {
       text: "Chemin avec des papillons et des licornes.",
       action: "goToChapter('mort_chemins_2')"
       },
       {
-      text: "Chemin volcanique avec tremblement de terre.",
-      action: "goToChapter('suite_chemins')"
+      text: "Chemin avec des miroirs.",
+      action: "goToChapter('mort_chemins_1')" 
       },
     ],
   },
@@ -83,7 +83,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -95,7 +95,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -139,7 +139,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -178,12 +178,12 @@ let chaptersObj = {
       action: "goToChapter('mort_planete')" 
       },
       {
-      text: "PKÈFQJRBGEQ",
-      action: "goToChapter('restart_planete')"
-      },
-      {
       text: "JO3RFRGGEUFVOW",
       action: "goToChapter('suite_planete')"
+      },
+      {
+      text: "PKÈFQJRBGEQ",
+      action: "goToChapter('restart_planete')"
       },
     ],
   },
@@ -195,7 +195,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -207,7 +207,7 @@ let chaptersObj = {
     option: [
       {
       text: "Traverser",
-      action: "goToChapter('les_chemins')"
+      action: "retourChemins()"
       }
     ],
   },
@@ -219,7 +219,7 @@ let chaptersObj = {
     option: [
       {
       text: "Écouter",
-      action: "goToChapter('dilemme_coffre')"
+      action: "impact()"
       }
     ],
   },
@@ -247,7 +247,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -263,7 +263,7 @@ let chaptersObj = {
       }
     ],
   },
-
+  
   moment_attendu: {
     subtitle: "Le moment tant attendu",
     text: "Tu arrives devant ton prince.",
@@ -287,7 +287,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -299,7 +299,7 @@ let chaptersObj = {
     option: [
       {
       text: "Reccomencer?",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -310,12 +310,12 @@ let chaptersObj = {
     img: "assets/img/thanos.jpg",
     option: [
       {
-      text: "Tu ne claques des doigts avec le gant.",
-      action: "goToChapter('mort_pouvoir_mauvais')"
-      },
-      {
       text: "Tu claques des doigts avec le gant.",
       action: "goToChapter('suite_pouvoir_mauvais')"
+      },
+      {
+      text: "Tu ne claques des doigts avec le gant.",
+      action: "goToChapter('mort_pouvoir_mauvais')"
       },
     ],
   },
@@ -327,7 +327,7 @@ let chaptersObj = {
     option: [
       {
       text: "On recommence.",
-      action: "goToChapter('le_commencement')"
+      action: "recommencer()"
       }
     ],
   },
@@ -342,8 +342,53 @@ let chaptersObj = {
       action: "goToChapter('autre_planete')"
       }
     ],
-  } 
+  }, 
+
+  dilemme_coffre_mauvais: {
+    subtitle: "Dilemme du coffre",
+    text: "Un coffre apparait et te demande: As-tu aidé le père Noël?",
+    img: "assets/img/coffre.jpg",
+    option: [
+      {
+      text: "Non",
+      action: "goToChapter('mort_coffre_mauvais_1')" 
+      },
+      {
+      text: "Mentir et dire oui.",
+      action: "goToChapter('mort_coffre_mauvais_2')"
+      },
+    ],
+  },
+
+  mort_coffre_mauvais_1: {  
+    subtitle: "Game Over",
+    text: "Plante Piranha sort du coffre et te manges.",
+    img: "assets/img/piranha.jpg",
+    option: [
+      {
+      text: "On recommence.",
+      action: "recommencer()"
+      }
+    ],
+  },
+
+  mort_coffre_mauvais_2: {  
+    subtitle: "Game Over",
+    text: "Tu es forcé à manger de la lasagne avec Garfield pour le reste de tes temps",
+    img: "assets/img/garfield.jfif",
+    option: [
+      {
+      text: "On recommence.",
+      action: "recommencer()"
+      }
+    ],
+  },
 }
+
+
+
+
+let pereNoel = false;
 
 function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
@@ -352,23 +397,34 @@ function goToChapter(chapterName) {
   document.querySelector('img').src = chapitre.img;
   
   let bouton = '';
-  for (let i = 0; i <= chapitre.option.length; i++) {
+  for (let i = 0; i < chapitre.option.length; i++) {
     bouton += `<button onclick="${chapitre.option[i].action}">${chapitre.option[i].text}</button>`;
   }
   document.querySelector('.options').innerHTML = bouton;
-
-// let pereNoel = false;
-
-// function aide(){
-//   pereNoel = true;
-//   goToChapter('suite_chine_2')
-// }
-
-// function impact(){
-//  if(pereNoel = false){
-//    goToChapter()
-//  }
-//  else{
-//    goToChapter()
-//  }
 }
+
+function aide(){
+  pereNoel = true;
+  goToChapter('suite_chine_2')
+}
+
+function impact(){
+ if(pereNoel == false){
+    goToChapter('dilemme_coffre_mauvais')
+ }
+ else if(pereNoel == true){
+    goToChapter('dilemme_coffre')
+ }
+}
+
+function recommencer(){
+ pereNoel = false;
+ goToChapter('le_commencement');
+}
+
+function retourChemins(){
+  pereNoel = false;
+  goToChapter('les_chemins');
+}
+
+goToChapter('le_commencement')
