@@ -1,7 +1,7 @@
 let chaptersObj = {
   le_commencement: {  
     subtitle: "Le commencement",
-    text: "Tu es une princesse et tu te réveille d'un cauchemar sans personne à côté de toi. Le prince s'est enfui et tu veux le retrouver.",
+    text: "Tu es une princesse et tu te réveilles d'un cauchemar sans personne à côté de toi. Le prince s'est enfui et tu veux le retrouver.",
     img: "assets/img/tiana_dort.jpg",
     option: [
       {
@@ -21,7 +21,7 @@ let chaptersObj = {
 
   mort_commencement_1: {  
     subtitle: "Game Over",
-    text: "Tu te fais tué par le dragon.",
+    text: "Tu te fais tuer par le dragon.",
     img: "assets/img/dragon.jfif",
     option: [
       {
@@ -33,7 +33,7 @@ let chaptersObj = {
 
   mort_commencement_2: {  
     subtitle: "Game Over",
-    text: "Tu deviens hyper musclé et tu tue le dragon. En sortant du château, tu traverses le pont devant toi. Tu meurs parce que tu casses le pont avec ton poids" ,
+    text: "Tu deviens hyper musclé et tu tues le dragon. En sortant du château, tu traverses le pont devant toi. Tu meurs parce que tu casses le pont avec ton poids" ,
     img: "assets/img/pont_casse.jpg",
     option: [
       {
@@ -49,7 +49,7 @@ let chaptersObj = {
     img: "assets/img/dragon_mange.png",
     option: [
       {
-      text: "Traverser le pont",
+      text: "Traverser le pont.",
       action: "goToChapter('les_chemins')"
       }
     ],
@@ -90,7 +90,7 @@ let chaptersObj = {
 
   mort_chemins_2: {  
     subtitle: "Game Over",
-    text: "Tu meurs par les papillons kamikaze et les licornes qui tirent des lasers.",
+    text: "Tu meurs par des papillons kamikaze et des licornes qui tirent des lasers.",
     img: "assets/img/unicorn.jpeg",
     option: [
       {
@@ -162,7 +162,7 @@ let chaptersObj = {
     img: "assets/img/pere_noel.jpg",
     option: [
       {
-      text: "Regarder autour",
+      text: "Regarder autour.",
       action: "goToChapter('autre_planete')"
       }
     ],
@@ -190,7 +190,7 @@ let chaptersObj = {
 
   mort_planete: {  
     subtitle: "Game Over",
-    text: "Tu te transforme en montagne.",
+    text: "Tu te transformes en montagne.",
     img: "assets/img/montagne.jpg",
     option: [
       {
@@ -214,7 +214,7 @@ let chaptersObj = {
 
   suite_planete: {  
     subtitle: "Ocarina",
-    text: "De la musique de Zelda commence à jouer",
+    text: "De la musique de Zelda commence à jouer.",
     img: "assets/img/navi.png",
     option: [
       {
@@ -270,7 +270,7 @@ let chaptersObj = {
     img: "assets/img/prince.jpg",
     option: [
       {
-      text: "Tu le laisse vivre.",
+      text: "Tu le laisses vivre.",
       action: "goToChapter('mort_attendu')"
       },
       {
@@ -282,7 +282,7 @@ let chaptersObj = {
 
   mort_attendu: {  
     subtitle: "Game Over",
-    text: "Pumba arrive avec la musique de THX et vous tuent tout les deux avec sa flatulence",
+    text: "Pumba arrive avec la musique de THX et vous tuent tous les deux avec sa flatulence",
     img: "assets/img/pumba.png",
     option: [
       {
@@ -294,7 +294,7 @@ let chaptersObj = {
 
   fin_attendu: {  
     subtitle: "The End",
-    text: "Tu prends toute sa richesse et vit heureuse pour la fin des temps.",
+    text: "Tu prends toute sa richesse et vit heureuse jusqu'à la fin des temps.",
     img: "assets/img/richesse.jpg",
     option: [
       {
@@ -306,7 +306,7 @@ let chaptersObj = {
 
   pouvoir_ultime_mauvais: {
     subtitle: "Pouvoir ultime",
-    text: "Elle trouve le gant de Thanos avec toutes les pierres.",
+    text: "Tu trouves le gant de Thanos avec toutes les pierres.",
     img: "assets/img/thanos.jpg",
     option: [
       {
@@ -314,7 +314,7 @@ let chaptersObj = {
       action: "goToChapter('suite_pouvoir_mauvais')"
       },
       {
-      text: "Tu ne claques des doigts avec le gant.",
+      text: "Tu ne claques pas des doigts avec le gant.",
       action: "goToChapter('mort_pouvoir_mauvais')"
       },
     ],
@@ -322,7 +322,7 @@ let chaptersObj = {
 
   mort_pouvoir_mauvais: {  
     subtitle: "Game Over",
-    text: "LeBron James arrive et fait un panier avec le gant mais celui-ci tombe sur toi et tu meurs.",
+    text: "LeBron James arrive, fait un panier avec le gant mais celui-ci tombe sur toi et tu meurs.",
     img: "assets/img/lebron.jpg",
     option: [
       {
