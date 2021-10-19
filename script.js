@@ -333,7 +333,7 @@ let chaptersObj = {
   },
 
   suite_pouvoir_mauvais: {  
-    subtitle: "Game Over",
+    subtitle: "Autre planète",
     text: "Tu te téléportes sur une autre planète.",
     img: "assets/img/planete.jpg",
     option: [
