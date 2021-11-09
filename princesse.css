@@ -84,3 +84,10 @@ button:hover {
 .cacher {
   display: none;
 }
+
+.source {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}

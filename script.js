@@ -92,6 +92,7 @@ let chaptersObj = {
     subtitle: "Game Over",
     text: "Tu meurs par des papillons kamikaze et des licornes qui tirent des lasers.",
     img: "assets/img/unicorn.jpeg",
+    video: "assets/vid/unicorn.mp4",
     option: [
       {
       text: "On recommence.",
@@ -160,6 +161,7 @@ let chaptersObj = {
     subtitle: "Le père Noël",
     text: "Il te téléporte avec sa barbe sur une autre planète",
     img: "assets/img/pere_noel.jpg",
+    video: "assets/vid/santaclaus.mp4",
     option: [
       {
       text: "Regarder autour.",
@@ -395,13 +397,19 @@ function goToChapter(chapterName) {
   document.querySelector('h3').innerHTML =  chapitre.subtitle;
   document.querySelector('p').innerHTML = chapitre.text;
   document.querySelector('img').src = chapitre.img;
-  
   let bouton = '';
   for (let i = 0; i < chapitre.option.length; i++) {
     bouton += `<button onclick="${chapitre.option[i].action}">${chapitre.option[i].text}</button>`;
   }
   document.querySelector('.options').innerHTML = bouton;
+
+  let video = '';
+  if (chapitre.video != undefined){
+    video += `<video src="${chapitre.video}" poster="${chapitre.img}" loop muted autoplay></video>`
+    document.querySelector('img').innerHTML = video;
+  }
 }
+
 
 function aide(){
   pereNoel = true;
@@ -427,4 +435,4 @@ function retourChemins(){
   goToChapter('les_chemins');
 }
 
-goToChapter('le_commencement')
+goToChapter('suite_chine_2')
