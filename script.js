@@ -415,12 +415,15 @@ function goToChapter(chapterName) {
   }
   audio.currentTime = 0
   audio.play()
+
+  localStorage.setItem('chapitre', chapterName)
 }
 
 
 function aide(){
   pereNoel = true;
   goToChapter('suite_chine_2')
+  localStorage.setItem('special', pereNoel)
 }
 
 function impact(){
@@ -435,11 +438,29 @@ function impact(){
 function recommencer(){
  pereNoel = false;
  goToChapter('le_commencement');
+ localStorage.setItem('special', pereNoel)
 }
 
 function retourChemins(){
   pereNoel = false;
   goToChapter('les_chemins');
+  localStorage.setItem('special', pereNoel)
 }
 
-goToChapter('suite_chine_2')
+
+document.addEventListener("DOMContentLoaded", function() { 
+  if(localStorage.getItem('chapitre') != null){
+    goToChapter(`${localStorage.getItem('chapitre')}`)
+  }
+  else if(localStorage.getItem('chapitre') == null){
+    goToChapter('le_commencement')
+  }
+
+  if(localStorage.getItem('special') != null){
+    pereNoel = localStorage.getItem('special')
+  }
+  else if(localStorage.getItem('special') == null){
+    pereNoel = false
+  }
+});
+
