@@ -394,6 +394,7 @@ let pereNoel = false;
 let audio = new Audio('assets/vid_audio/audio_dababy.mp3')
 
 function goToChapter(chapterName) {
+  console.log(chapterName)
   let chapitre = chaptersObj[chapterName];
   document.querySelector('h3').innerHTML =  chapitre.subtitle;
   document.querySelector('p').innerHTML = chapitre.text;
@@ -449,18 +450,19 @@ function retourChemins(){
 
 
 document.addEventListener("DOMContentLoaded", function() { 
+
   if(localStorage.getItem('chapitre') != null){
     goToChapter(`${localStorage.getItem('chapitre')}`)
   }
-  else if(localStorage.getItem('chapitre') == null){
+  else{
     goToChapter('le_commencement')
   }
 
   if(localStorage.getItem('special') != null){
-    pereNoel = localStorage.getItem('special')
+    pereNoel = Boolean(localStorage.getItem('special'))
   }
-  else if(localStorage.getItem('special') == null){
+  else{
     pereNoel = false
   }
+  
 });
-
