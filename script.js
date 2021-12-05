@@ -391,10 +391,13 @@ let chaptersObj = {
 
 
 let pereNoel = false;
+let choixSon = true
 let audio = new Audio('assets/vid_audio/audio_dababy.mp3')
+let check = document.querySelector('.cocher')
+let body = document.querySelector('body')
 
 function goToChapter(chapterName) {
-  console.log(chapterName)
+  
   let chapitre = chaptersObj[chapterName];
   document.querySelector('h3').innerHTML =  chapitre.subtitle;
   document.querySelector('p').innerHTML = chapitre.text;
@@ -414,10 +417,22 @@ function goToChapter(chapterName) {
     source = `<img src="${chapitre.img}"/>`
     document.querySelector('.source').innerHTML = source;
   }
-  audio.currentTime = 0
-  audio.play()
+
+  if(check.checked == true){
+    choixSon = true
+  }
+  else{
+    choixSon = false
+  }
+
+  if(choixSon == true){
+    audio.currentTime = 0
+    audio.play()
+  }
 
   localStorage.setItem('chapitre', chapterName)
+
+  body.className = chapterName
 }
 
 
@@ -466,3 +481,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
 });
+
+function reset(){
+  pereNoel = false;
+  localStorage.clear('chapitre')
+  goToChapter('le_commencement');
+  localStorage.setItem('special', pereNoel);
+}
+
+

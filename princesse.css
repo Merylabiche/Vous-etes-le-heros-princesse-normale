@@ -90,3 +90,104 @@ button:hover {
   justify-content: space-around;
   align-content: center;
 }
+
+.reset {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  font-family: "ComicSans";
+  color: #ff4365;
+  margin-bottom: 20px;
+}
+
+.mort_commencement_1 {
+  background-color: #08d996;
+}
+
+.mort_commencement_2 {
+  background-color: #08d996;
+}
+
+.mort_chemins_1 {
+  background-color: #08d996;
+}
+
+.mort_chemins_2 {
+  background-color: #08d996;
+}
+
+.mort_chine {
+  background-color: #08d996;
+}
+
+.mort_planete {
+  background-color: #08d996;
+}
+
+.mort_coffre {
+  background-color: #08d996;
+}
+
+.mort_attendu {
+  background-color: #08d996;
+}
+
+.mort_pouvoir_mauvais {
+  background-color: #08d996;
+}
+
+.mort_coffre_mauvais_1 {
+  background-color: #08d996;
+}
+
+.mort_coffre_mauvais_2 {
+  background-color: #08d996;
+}
+
+.mort_commencement_1 h3 {
+  color: #db2d4d;
+}
+
+.mort_commencement_2 h3 {
+  color: #db2d4d;
+}
+
+.mort_chemins_1 h3 {
+  color: #db2d4d;
+}
+
+.mort_chemins_2 h3 {
+  color: #db2d4d;
+}
+
+.mort_chine h3 {
+  color: #db2d4d;
+}
+
+.mort_planete h3 {
+  color: #db2d4d;
+}
+
+.mort_coffre h3 {
+  color: #db2d4d;
+}
+
+.mort_attendu h3 {
+  color: #db2d4d;
+}
+
+.mort_pouvoir_mauvais h3 {
+  color: #db2d4d;
+}
+
+.mort_coffre_mauvais_1 h3 {
+  color: #db2d4d;
+}
+
+.mort_coffre_mauvais_2 h3 {
+  color: #db2d4d;
+}
